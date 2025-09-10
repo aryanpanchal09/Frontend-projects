@@ -42,8 +42,10 @@ header {
 }
 .navbar a:hover {
   color: #ddd;
+  cursor: pointer;
 }
 
+/* Homepage */
 .homepage {
   position: relative;
   height: 100vh;
@@ -51,6 +53,16 @@ header {
   background: url("images/home-bg.jpg");
   background-position: center;
   background-size: cover;
+}
+.homepage::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
 }
 .homepage .content {
   height: 85%;
@@ -65,4 +77,21 @@ header {
   font-size: 60px;
   font-weight: 700;
   margin-bottom: 10px;
+}
+.homepage a {
+  color: #333;
+  text-decoration: none;
+  background: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 5px 10px;
+  font-size: 18px;
+  transition: color 0.3s;
+  text-transform: capitalize;
+}
+.homepage a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
