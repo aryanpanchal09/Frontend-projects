@@ -131,7 +131,6 @@ section .card img {
   border-radius: 50%;
   margin-bottom: 20px;
 }
-
 .cards-row {
   display: flex;
   flex-wrap: wrap;
